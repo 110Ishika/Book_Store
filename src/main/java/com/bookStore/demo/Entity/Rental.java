@@ -1,5 +1,6 @@
 package com.bookStore.demo.Entity;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 import jakarta.persistence.Column;
@@ -33,7 +34,7 @@ public class Rental {
 	private String  renterName;
 	
 	@Column(nullable = false)
-	private Date rentalDate;
+	private LocalDate rentalDate;
 	
 	@Column(name = "rented_days", nullable = false)
 	private Date returnDate;
